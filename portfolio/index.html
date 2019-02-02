@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Generated Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+  <style>
+
+  .bar{
+    fill: steelblue;
+  }
+
+  .bar:hover{
+    fill: brown;
+  }
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><p id="titlenameid">Name</p></a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <form action="">
+            <input type="text" name="username" id="usernameid">
+            <!-- <input class="btn btn-xl btn-outline-light" type="submit"> -->
+          <button class="btn btn-xl btn-outline-light" >Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#statistics">Statistics</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#cases">Recents Cases</a>
+          </li>
+          <!-- <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container">
+      <img class="img-fluid mb-5 d-block mx-auto" src="img/lawyer.png" alt="">
+      <h1 class="text-uppercase mb-0" id="headernameid">NAME</h1>
+      <hr class="star-light">
+      <h2 class="font-weight-light mb-0" id="totalnumberid">Total cases appeared: NUMBERS</h2>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="text-white mb-0" id="statistics">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary text-white">Statistics (Frequency of cases)</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8" id="layout">
+              <canvas id="myChart" width="500" height="500"></canvas>
+          </div>
+          <div class="col-md-2"></div>
+      </div>
+      
+      <div class="row">
+
+        <div class="col-lg-4 ml-auto">
+          <!-- <form action="">
+            <button class="btn btn-xl btn-outline-dark" >search</button>
+          </form> -->
+          <p id="youthcourtid" class="lead text-secondary">Youth Court: 0</p>
+          <p id="smallclaimstribunal2id" class="lead text-secondary">Small Claims Tribunal: 0</p>
+          <p id="privycoun" class="lead text-secondary">Privy Council: 0</p>
+          <p id="magistratescourt" class="lead text-secondary">Magistrates Court: 0</p>
+          <p id="judgment" class="lead text-secondary">Judgments: 0</p>
+          <p id="highcourtfam" class="lead text-secondary">High Court (Family): 0</p>
+          <p id="fedcourt" class="lead text-secondary">Federal Court: 0</p>
+          <p id="discountfam" class="lead text-secondary">District Court (Family): 0</p>
+          <p id="courtofthree" class="lead text-secondary">Court of Three Judges: 0</p>
+          <p id="courtappeal" class="lead text-secondary">Court of Appeal: 0</p>
+          <p id="constitutionaltribunal" class="lead text-secondary">Constituational Tribunal: 0</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p id="smallclaimstribunal1id" class="lead text-secondary">Small Claims Tribunal: 0</p>
+          <p id="singaporeintcom" class="lead text-secondary">Singapore International Commercial Court: 0</p>
+          <p id="militarycourt" class="lead text-secondary">Military Count of Appeal: 0</p>
+          <p id="juvenilecourt" class="lead text-secondary">Juvenule Count: 0</p>
+          <p id="highcourtreg" class="lead text-secondary">High Court (Registrar): 0</p>
+          <p id="highcourtid" class="lead text-secondary">High Court: 0</p>
+          <p id="familycourt" class="lead text-secondary">Family Court: 0</p>
+          <p id="districtcount" class="lead text-secondary">District Court: 0</p>
+          <p id="courtappealsicc" class="lead text-secondary">Court of Appeal: 0</p>
+        </div>
+      </div>
+      <!-- <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-dark" href="#">
+          <i class="fas fa-download mr-2"></i>
+          Download Now!
+        </a>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="portfolio bg-primary " id="cases">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white mb-0">Judgments</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center text-uppercase text-white mb-0" id="judgementcatid"></h5>
+        </div>
+      </div>
+      <!-- <h2 class="text-center text-uppercase text-white mb-0" id="youthcourtcatid">Statistics</h2> -->
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law1.jpg" alt="">
+          </a>
+          <p class="lead text-white" id="judgcaseno1id">Case No: </p>
+          <p class="lead text-white" id="judgdate1id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law2.jpg" alt="">
+          </a>
+          <p class="lead text-white" id="judgcaseno2id">Case No: </p>
+          <p class="lead text-white" id="judgdate2id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law3.jpg" alt="">
+          </a>
+          <p class="lead text-white" id="judgcaseno3id">Case No: </p>
+          <p class="lead text-white" id="judgdate3id">Date: </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio " id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase mb-0">District Court</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center text-uppercase text-secondary mb-0" id="districtcatid"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law1.jpg" alt="">
+          </a>
+          <p class="lead" id="districtcaseno1id">Case No: </p>
+          <p class="lead" id="districtdate1id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law2.jpg" alt="">
+          </a>
+          <p class="lead" id="districtcaseno2id">Case No: </p>
+          <p class="lead" id="districtdate2id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law3.jpg" alt="">
+          </a>
+          <p class="lead" id="districtcaseno3id">Case No: </p>
+          <p class="lead" id="districtdate3id">Date: </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio bg-primary " id="cases">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white mb-0">High Court</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center text-uppercase text-white mb-0" id="highcourtcatid"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law1.jpg" alt="">
+          </a>
+          <p class="lead text-white" id="highcaseno1id">Case No: </p>
+          <p class="lead text-white" id="highdate1id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law2.jpg" alt="">
+          </a>
+          <p class="lead text-white" id="highcaseno2id">Case No: </p>
+          <p class="lead text-white" id="highdate2id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law3.jpg" alt="">
+          </a>
+          <p class="lead text-white" id="highcaseno3id">Case No: </p>
+          <p class="lead text-white" id="highdate3id">Date: </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio " id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase mb-0">Court of Appeal</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center text-uppercase text-secondary mb-0" id="courtofappealcatid"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law1.jpg" alt="">
+          </a>
+          <p class="lead" id="appealcaseno1id">Case No: </p>
+          <p class="lead" id="appealdate1id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law2.jpg" alt="">
+          </a>
+          <p class="lead" id="appealcaseno2id">Case No: </p>
+          <p class="lead" id="appealdate2id">Date: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law3.jpg" alt="">
+          </a>
+          <p class="lead" id="appealcaseno3id">Case No: </p>
+          <p class="lead" id="appealdate3id">Date: </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio bg-primary " id="cases">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white mb-0">Youth Court</h2>
+      <hr class="star-light mb-5">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center text-uppercase text-white mb-0" id="highcourtcatid"></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law1.jpg" alt="">
+          </a>
+          <p class="lead text-white">Case Name: </p>
+          <p class="lead text-white">Category: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law2.jpg" alt="">
+          </a>
+          <p class="lead text-white">Case Name: </p>
+          <p class="lead text-white">Category: </p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fas fa-search-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/law3.jpg" alt="">
+          </a>
+          <p class="lead text-white">Case Name: </p>
+          <p class="lead text-white">Category: </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">We Are</h4>
+          <p class="lead mb-0">Lawgic
+            <br>Lawgic</p>
+        </div>
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fab fa-fw fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fab fa-fw fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fab fa-fw fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                <i class="fab fa-fw fa-dribbble"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-uppercase mb-4">About Lawgic</h4>
+          <p class="lead mb-0">Saving the law industry by
+            <a href="http://startbootstrap.com">DingYang</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Your Website 2019</small>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">DAC 19643-4/14</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/law1.jpg" alt="">
+            <p class="mb-5">THE CHARGES - The Accused was the Chairman and Managing Director of a public listed company, Eastern Holdings Ltd (“EHL”). He claimed trial to one charge of cheating under section 420 of the Penal Code, Cap 224 (“the cheating charge”), and one charge under section 156(1) punishable under section 156(10) of the Companies Act, Cap 50 (“the Companies Act charge”). After a trial spanning 13 days, I found him guilty on both charges.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Case</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+  
+
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+<script>
+  $("form").submit(function(e) {
+    e.preventDefault();
+    var user = document.getElementById('usernameid').value
+    $.ajax({
+      url: "http://10.124.131.119:5000/getCatchwordBy",
+      data: {name:"\""+user+"\""},
+	    type: "GET", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
+      success: function(responseData) {
+        console.log(responseData)
+
+        var keys = [];
+        var totalcount = 0;
+        var json = [{"receive_date" : "2013-11-04","responses": "10"}]
+        var labels = []
+        var datapoints = []
+        var user = document.getElementById('usernameid').value
+        for(var k in responseData) keys.push(k);
+        for(var i=0; i<keys.length; i++){
+          console.log(keys[i])
+
+          if(keys[i] == "r1c1sc17"){
+            var x = document.getElementById("youthcourtid");
+            x.innerHTML = "Youth Court: "+responseData.r1c1sc17.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc17.totalAppearances)
+            labels.push(responseData.r1c1sc17.name)
+            datapoints.push(responseData.r1c1sc17.totalAppearances)
+            for(var c in responseData.r1c1sc17) cats.push(c);
+            var categories = ""
+            for(var n=0; n<cats.length; n++){
+              categories = categories + responseData.r1c1sc17[cats[n]]
+            }
+            var y = document.getElementById("youthcourtcatid");
+            y.innerHTML = "Categories: "+categories;
+          }else if(keys[i] == "r1c1sc2"){
+            var x = document.getElementById("smallclaimstribunal1id");
+            x.innerHTML = "Small Claims Tribunal: "+responseData.r1c1sc2.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc2.totalAppearances)
+            labels.push(responseData.r1c1sc2.name)
+            datapoints.push(responseData.r1c1sc2.totalAppearances)
+          }else if(keys[i] == "r1c1sc118"){
+            var x = document.getElementById("smallclaimstribunal2id");
+            x.innerHTML = "Small Claims Tribunal: "+responseData.r1c1sc118.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc118.totalAppearances)
+            labels.push(responseData.r1c1sc118.name)
+            datapoints.push(responseData.r1c1sc118.totalAppearances)
+          }else if(keys[i] == "r1c1sc11"){
+            var x = document.getElementById("singaporeintcom");
+            x.innerHTML = "Singapore International Commercial Court: "+responseData.r1c1sc11.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc11.totalAppearances)
+            labels.push(responseData.r1c1sc11.name)
+            datapoints.push(responseData.r1c1sc11.totalAppearances)
+          }else if(keys[i] == "r1c1sc7"){
+            var x = document.getElementById("privycoun");
+            x.innerHTML = "Privy Council: "+responseData.r1c1sc7.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc7.totalAppearances)
+            labels.push(responseData.r1c1sc7.name)
+            datapoints.push(responseData.r1c1sc7.totalAppearances)
+          }else if(keys[i] == "r1c1sc10"){
+            var x = document.getElementById("militarycourt");
+            x.innerHTML = "Military Court of Appeal: "+responseData.r1c1sc10.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc10.totalAppearances)
+            labels.push(responseData.r1c1sc10.name)
+            datapoints.push(responseData.r1c1sc10.totalAppearances)
+          }else if(keys[i] == "r1c1sc5"){
+            var x = document.getElementById("magistratescourt");
+            x.innerHTML = "Magistrates Court: "+responseData.r1c1sc5.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc5.totalAppearances)
+            labels.push(responseData.r1c1sc5.name)
+            datapoints.push(responseData.r1c1sc5.totalAppearances)
+          }else if(keys[i] == "r1c1sc6"){
+            var x = document.getElementById("juvenilecourt");
+            x.innerHTML = "Juvenile Court: "+responseData.r1c1sc6.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc6.totalAppearances)
+            labels.push(responseData.r1c1sc6.name)
+            datapoints.push(responseData.r1c1sc6.totalAppearances)
+          }else if(keys[i] == "r1c1"){
+            var x = document.getElementById("judgment");
+            x.innerHTML = "Judgments: "+responseData.r1c1.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1.totalAppearances)
+            labels.push(responseData.r1c1.name)
+            datapoints.push(responseData.r1c1.totalAppearances)
+            var cats = [];
+            var sortit = [];
+            for(var c in responseData.r1c1) cats.push(c);
+            var categories = ""
+            for(var n=0; n<cats.length; n++){
+              if(Number.isInteger(responseData.r1c1[cats[n]])){
+                sortit.push(responseData.r1c1[cats[n]])
+              }
+            }
+            sortit.sort(function(a, b){return b-a});
+            for(var r=0; r<sortit.length; r++){
+              if(r==3){
+                break
+              }else{
+                for(var n=0; n<cats.length; n++){
+                  if(sortit[r] == responseData.r1c1[cats[n]]){
+                    categories = categories + cats[n]+": "+responseData.r1c1[cats[n]] + " "
+                  }
+                }
+              }
+            }
+            var y = document.getElementById("judgementcatid");
+            y.innerHTML = categories;
+          }else if(keys[i] == "r1c1sc119"){
+            var x = document.getElementById("highcourtreg");
+            x.innerHTML = "High Court (Registrar): "+responseData.r1c1sc119.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc119.totalAppearances)
+            labels.push(responseData.r1c1sc119.name)
+            datapoints.push(responseData.r1c1sc119.totalAppearances)
+          }else if(keys[i] == "r1c1sc13"){
+            var x = document.getElementById("highcourtfam");
+            x.innerHTML = "High Court (Family): "+responseData.r1c1sc13.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc13.totalAppearances)
+            labels.push(responseData.r1c1sc13.name)
+            datapoints.push(responseData.r1c1sc13.totalAppearances)
+          }else if(keys[i] == "r1c1sc1"){
+            var x = document.getElementById("highcourtid");
+            x.innerHTML = "High Court: "+responseData.r1c1sc1.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc1.totalAppearances)
+            labels.push(responseData.r1c1sc1.name)
+            datapoints.push(responseData.r1c1sc1.totalAppearances)
+            var cats = [];
+            var sortit = [];
+            for(var c in responseData.r1c1sc1) cats.push(c);
+            var categories = ""
+            for(var n=0; n<cats.length; n++){
+              if(Number.isInteger(responseData.r1c1sc1[cats[n]])){
+                sortit.push(responseData.r1c1sc1[cats[n]])
+              }
+            }
+            sortit.sort(function(a, b){return b-a});
+            for(var r=0; r<sortit.length; r++){
+              if(r==3){
+                break
+              }else{
+                for(var n=0; n<cats.length; n++){
+                  if(sortit[r] == responseData.r1c1sc1[cats[n]]){
+                    categories = categories + cats[n]+": "+responseData.r1c1sc1[cats[n]] + " "
+                  }
+                }
+              }
+            }
+            var y = document.getElementById("highcourtcatid");
+            y.innerHTML = categories;
+          }else if(keys[i] == "r1c1sc8"){
+            var x = document.getElementById("fedcourt");
+            x.innerHTML = "Federal Court: "+responseData.r1c1sc8.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc8.totalAppearances)
+            labels.push(responseData.r1c1sc8.name)
+            datapoints.push(responseData.r1c1sc8.totalAppearances)
+          }else if(keys[i] == "r1c1sc16"){
+            var x = document.getElementById("familycourt");
+            x.innerHTML = "Family Court: "+responseData.r1c1sc16.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc16.totalAppearances)
+            labels.push(responseData.r1c1sc16.name)
+            datapoints.push(responseData.r1c1sc16.totalAppearances)
+          }else if(keys[i] == "r1c1sc15"){
+            var x = document.getElementById("discountfam");
+            x.innerHTML = "District Court (Family): "+responseData.r1c1sc15.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc15.totalAppearances)
+            labels.push(responseData.r1c1sc15.name)
+            datapoints.push(responseData.r1c1sc15.totalAppearances)
+          }else if(keys[i] == "r1c1sc4"){
+            var x = document.getElementById("districtcount");
+            x.innerHTML = "District Court: "+responseData.r1c1sc4.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc4.totalAppearances)
+            labels.push(responseData.r1c1sc4.name)
+            datapoints.push(responseData.r1c1sc4.totalAppearances)
+            var cats = [];
+            var sortit = [];
+            for(var c in responseData.r1c1sc4) cats.push(c);
+            var categories = ""
+            for(var n=0; n<cats.length; n++){
+              if(Number.isInteger(responseData.r1c1sc4[cats[n]])){
+                sortit.push(responseData.r1c1sc4[cats[n]])
+              }
+            }
+            sortit.sort(function(a, b){return b-a});
+            for(var r=0; r<sortit.length; r++){
+              if(r==3){
+                break
+              }else{
+                for(var n=0; n<cats.length; n++){
+                  if(sortit[r] == responseData.r1c1sc4[cats[n]]){
+                    categories = categories + cats[n]+": "+responseData.r1c1sc4[cats[n]] + " "
+                  }
+                }
+              }
+            }
+            var y = document.getElementById("districtcatid");
+            y.innerHTML = categories;
+          }else if(keys[i] == "r1c1sc14"){
+            var x = document.getElementById("courtofthree");
+            x.innerHTML = "Court of Three Judges: "+responseData.r1c1sc14.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc14.totalAppearances)
+            labels.push(responseData.r1c1sc14.name)
+            datapoints.push(responseData.r1c1sc14.totalAppearances)
+          }else if(keys[i] == "r1c1sc12"){
+            var x = document.getElementById("courtappealsicc");
+            x.innerHTML = "Court of Appeal (SICC): "+responseData.r1c1sc12.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc12.totalAppearances)
+            labels.push(responseData.r1c1sc12.name)
+            datapoints.push(responseData.r1c1sc12.totalAppearances)
+          }else if(keys[i] == "r1c1sc3"){
+            var x = document.getElementById("courtappeal");
+            x.innerHTML = "Court of Appeal: "+responseData.r1c1sc3.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc3.totalAppearances)
+            labels.push(responseData.r1c1sc3.name)
+            datapoints.push(responseData.r1c1sc3.totalAppearances)
+            var cats = [];
+            var sortit = [];
+            for(var c in responseData.r1c1sc3) cats.push(c);
+            var categories = ""
+            for(var n=0; n<cats.length; n++){
+              if(Number.isInteger(responseData.r1c1sc3[cats[n]])){
+                sortit.push(responseData.r1c1sc3[cats[n]])
+              }
+            }
+            sortit.sort(function(a, b){return b-a});
+            for(var r=0; r<sortit.length; r++){
+              if(r==3){
+                break
+              }else{
+                for(var n=0; n<cats.length; n++){
+                  if(sortit[r] == responseData.r1c1sc3[cats[n]]){
+                    categories = categories + cats[n]+": "+responseData.r1c1sc3[cats[n]] + " "
+                  }
+                }
+              }
+            }
+            var y = document.getElementById("courtofappealcatid");
+            y.innerHTML = categories;
+          }else if(keys[i] == "r1c1sc9"){
+            var x = document.getElementById("constitutionaltribunal");
+            x.innerHTML = "Constitutional Tribunal: "+responseData.r1c1sc9.totalAppearances;
+            totalcount = totalcount + parseInt(responseData.r1c1sc9.totalAppearances)
+            labels.push(responseData.r1c1sc9.name)
+            datapoints.push(responseData.r1c1sc9.totalAppearances)
+          }else if(keys[i] == "name"){
+            var x = document.getElementById("headernameid");
+            x.innerHTML = responseData.name.substring(1, responseData.name.length-1);
+            var y = document.getElementById("titlenameid");
+            y.innerHTML = responseData.name.substring(1, responseData.name.length-1);;
+          }
+          if (i == keys.length-1){
+            var x = document.getElementById("totalnumberid");
+            x.innerHTML = "Total cases taken: "+totalcount.toString();
+          }
+        }
+        var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: '# of Appearances',
+            data: datapoints,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+      },
+      error: console.error
+    });
+    $.ajax({
+      url: "http://10.124.131.119:5000/searchBy",
+      data: {name:"\""+user+"\""},
+	    type: "GET", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
+      success: function(responseData) {
+        console.log(responseData)
+
+        var keys = [];
+        var user = document.getElementById('usernameid').value
+        for(var k in responseData) keys.push(k);
+        for(var i=0; i<keys.length; i++){
+          if(keys[i] == "r1c1"){
+            var x = document.getElementById("judgcaseno1id");
+            x.innerHTML = "Case No: "+ responseData.r1c1.result.result1.caseno;
+            var x = document.getElementById("judgdate1id");
+            x.innerHTML = "Date: "+ responseData.r1c1.result.result1.date;
+            var x = document.getElementById("judgcaseno2id");
+            x.innerHTML = "Case No: "+ responseData.r1c1.result.result2.caseno;
+            var x = document.getElementById("judgdate2id");
+            x.innerHTML = "Date: "+ responseData.r1c1.result.result2.date;
+            var x = document.getElementById("judgcaseno3id");
+            x.innerHTML = "Case No: "+ responseData.r1c1.result.result3.caseno;
+            var x = document.getElementById("judgdate3id");
+            x.innerHTML = "Date: "+ responseData.r1c1.result.result3.date;
+          }else if(keys[i] == "r1c1sc4"){
+            var x = document.getElementById("districtcaseno1id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc4.result.result1.caseno;
+            var x = document.getElementById("districtdate1id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc4.result.result1.date;
+            var x = document.getElementById("districtcaseno2id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc4.result.result2.caseno;
+            var x = document.getElementById("districtdate2id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc4.result.result2.date;
+            var x = document.getElementById("districtcaseno3id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc4.result.result3.caseno;
+            var x = document.getElementById("districtdate3id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc4.result.result3.date;
+          }else if(keys[i] == "r1c1sc1"){
+            var x = document.getElementById("highcaseno1id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc1.result.result1.caseno;
+            var x = document.getElementById("highdate1id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc1.result.result1.date;
+            var x = document.getElementById("highcaseno2id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc1.result.result2.caseno;
+            var x = document.getElementById("highdate2id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc1.result.result2.date;
+            var x = document.getElementById("highcaseno3id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc1.result.result3.caseno;
+            var x = document.getElementById("highdate3id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc1.result.result3.date;
+          }else if(keys[i] == "r1c1sc3"){
+            var x = document.getElementById("appealcaseno1id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc3.result.result1.caseno;
+            var x = document.getElementById("appealdate1id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc3.result.result1.date;
+            var x = document.getElementById("appealcaseno2id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc3.result.result2.caseno;
+            var x = document.getElementById("appealdate2id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc3.result.result2.date;
+            var x = document.getElementById("appealcaseno3id");
+            x.innerHTML = "Case No: "+ responseData.r1c1sc3.result.result3.caseno;
+            var x = document.getElementById("appealdate3id");
+            x.innerHTML = "Date: "+ responseData.r1c1sc3.result.result3.date;
+          }
+        }
+      },
+      error: console.error
+    });
+  });
+</script>
