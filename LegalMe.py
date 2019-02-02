@@ -10,7 +10,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CallbackQueryHandler, CommandHandler
 
 
-TOKEN = "737927497:AAEcITFceetahZgZf384zQJy_UTT2v4Kv7c"
+TOKEN = "BOT API KEY HERE"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 bot = telegram.Bot(token=TOKEN)
 

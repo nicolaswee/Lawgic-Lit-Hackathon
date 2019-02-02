@@ -5,7 +5,7 @@ import urllib
 import telegram
 
 
-TOKEN = "644298022:AAHXAAs1mV8eQLlm0NHl38QP3uN8VyKuKAE"
+TOKEN = "BOT API KEY HERE"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 bot = telegram.Bot(token=TOKEN)
 

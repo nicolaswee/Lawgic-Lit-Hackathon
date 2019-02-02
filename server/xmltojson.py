@@ -4,7 +4,7 @@ import xmltodict, json
 import json
 
 API_KEY = 'API KEY HERE'
-URL = 'https://test-legalresearch.api.sal.sg/v1-search/search'
+URL = 'SEARCH URL HERE'
 HEADERS = {'Content-Type': ' application/x-www-form-urlencoded', 'cache-control':'no-cache', 'x-api-key':API_KEY}
 
 LIMIT = 3

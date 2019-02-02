@@ -548,7 +548,7 @@
     e.preventDefault();
     var user = document.getElementById('usernameid').value
     $.ajax({
-      url: "http://10.124.131.119:5000/getCatchwordBy",
+      url: "GET CATCH BY WORD API HERE",
       data: {name:"\""+user+"\""},
 	    type: "GET", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
       success: function(responseData) {
@@ -835,7 +835,7 @@ var myChart = new Chart(ctx, {
       error: console.error
     });
     $.ajax({
-      url: "http://10.124.131.119:5000/searchBy",
+      url: "SEARCH BY API HERE",
       data: {name:"\""+user+"\""},
 	    type: "GET", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
       success: function(responseData) {
